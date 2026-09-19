@@ -9,6 +9,7 @@
 <meta property="og:title" content="The Godfather Organic Farm — Wadi Sa'al, Saint Catherine">
 <meta property="og:description" content="Organic vegetables, zero chemicals, grown in Wadi Sa'al and picked the same day. مزرعة الجودفاذر العضوية.">
 <title>The Godfather Organic Farm — Wadi Sa'al, Saint Catherine</title>
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@500;700&display=swap" rel="stylesheet">
@@ -102,6 +103,61 @@ figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:.6rem}
 .verse{display:block;font-family:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif;
   font-size:1.02rem;line-height:2.1;direction:rtl;unicode-bidi:isolate;text-align:center;font-weight:500}
 
+/* ---- the verse as a scene -------------------------------------------- */
+/* Dusk colours are deliberately fixed, not theme-swapped: the wadi at
+   nightfall should look the same whichever palette the visitor is in. */
+.poem{--dusk-a:#221812; --dusk-b:#0C0908; --dusk-fg:#F3E9D9;
+  position:relative;overflow:hidden;isolation:isolate;padding:0;
+  background:linear-gradient(180deg,var(--dusk-a) 0%,var(--dusk-b) 78%);
+  border-top:1px solid rgba(243,233,217,.10);border-bottom:1px solid rgba(243,233,217,.10)}
+.poem-glow{position:absolute;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(60% 46% at 50% 26%,rgba(196,99,58,.30),transparent 70%)}
+.poem-ridge{position:absolute;left:0;right:0;bottom:0;z-index:-1;width:100%;height:clamp(110px,22vh,230px);display:block}
+.poem-in{position:relative;padding:clamp(4.5rem,13vh,8.5rem) 0 clamp(7rem,20vh,11rem);text-align:center}
+.poem-kicker{font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;
+  color:rgba(243,233,217,.55);margin-bottom:clamp(1.8rem,5vh,3rem)}
+html[lang="ar"] .poem-kicker{letter-spacing:.04em}
+.poem-verse{margin:0 auto;max-width:22ch;direction:rtl;unicode-bidi:isolate;
+  font-family:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif;font-weight:700;
+  color:var(--dusk-fg);font-size:clamp(1.15rem,4.4vw,2.15rem);line-height:2.25;
+  text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.poem-line{display:block}
+.poem-line+.poem-line{margin-top:.35em}
+.poem-line.rest{margin-top:1.1em}
+.poem-gloss{margin:clamp(2.2rem,6vh,3.4rem) auto 0;max-width:44ch;
+  font-size:.92rem;line-height:1.7;color:rgba(243,233,217,.62);font-style:italic}
+/* the reveal — only armed when JS is running, so the verse is never hidden
+   from a no-JS visitor or a crawler */
+.js .poem-line,.js .poem-gloss{opacity:0;transform:translateY(16px);
+  transition:opacity .95s ease,transform .95s cubic-bezier(.2,.7,.3,1);
+  transition-delay:calc(var(--i,0) * 420ms)}
+.js .poem.lit .poem-line,.js .poem.lit .poem-gloss{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .js .poem-line,.js .poem-gloss{opacity:1;transform:none;transition:none}
+}
+
+/* ---- certificate of the Godfather's blessing -------------------------- */
+.cert{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+@media(max-width:820px){.cert{grid-template-columns:1fr}}
+.cert-field{display:block;margin-top:1.4rem}
+.cert-field span{display:block;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:.5rem}
+html[lang="ar"] .cert-field span{letter-spacing:.02em}
+.cert-field input{width:100%;max-width:26rem;padding:.75rem .9rem;font:inherit;font-size:1rem;
+  color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:3px}
+.cert-field input:focus-visible{outline:2px solid var(--clay);outline-offset:1px}
+.cert-buttons{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.3rem}
+.btn{font:inherit;font-size:.92rem;padding:.72rem 1.25rem;border-radius:3px;cursor:pointer;
+  border:1px solid var(--clay);background:var(--clay);color:#fff}
+.btn:hover:not(:disabled){background:var(--clay-bright);border-color:var(--clay-bright)}
+.btn.ghost{background:transparent;color:var(--clay);border-color:var(--line)}
+.btn.ghost:hover:not(:disabled){border-color:var(--clay);background:transparent}
+.btn:disabled{opacity:.45;cursor:default}
+.cert-note{margin-top:1rem;font-size:.82rem;color:var(--ink-soft);max-width:38ch}
+.cert-stage{margin:0}
+.cert-stage canvas{width:100%;height:auto;display:block;border-radius:3px;
+  box-shadow:0 12px 34px rgba(36,31,28,.2)}
+.cert-stage[hidden]{display:none}
 .cal{border-top:1px solid var(--line);margin-bottom:2.6rem}
 .cal-key,.cal-row{display:grid;grid-template-columns:minmax(9rem,1.1fr) 3fr;gap:1rem;align-items:center}
 .cal-key{font-size:.7rem;color:var(--ink-soft);padding-bottom:.4rem}
@@ -281,18 +337,11 @@ a[href^="tel:"],.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
           <p>When Mr. Rezk started here, there was no model to copy. Farming this high in Sinai means short water, hard winters and ground that gives up nothing without years of work put into it first. He did that work, and then he shared what it taught him.</p>
           <p>That is the part his neighbours remember. Advice given, seedlings passed on, a hand with the irrigation when someone's line failed. The farms around him are part of what he built, even the ones that were never his.</p>
           <p>Today his son Alaa takes the morning's picking down to Saint Catherine and sells it under a sign that makes exactly one promise.</p>
-          <blockquote>
-            <span class="verse ar" lang="ar">بغاث الطير أكثرها صياحاً<br>ولم تصحْ البزاة ولا الصقور<br>ضعاف الأسد أكثرها زئيراً<br>وأخطرها اللواتي لا تزير</span>
-            <small>The lesser birds cry loudest, while the goshawks and the falcons stay silent. The weakest lions roar the most, and the deadliest are the ones that never roar.</small>
-          </blockquote>
         </div>
         <div data-lang="ar" lang="ar">
           <p>حين بدأ الأستاذ رزق هنا، لم يكن أمامه نموذج يحتذيه. الزراعة على هذا الارتفاع في سيناء تعني ماءً شحيحاً، وشتاءً قاسياً، وأرضاً لا تعطي شيئاً قبل سنوات من العمل فيها. قام بذلك العمل، ثم علّم غيره ما تعلّمه منه.</p>
           <p>وهذا ما يذكره جيرانه: نصيحة تُعطى، وشتلات تُمرَّر، ويد تمتد حين يتعطل خط الري عند أحدهم. المزارع من حوله جزء مما بناه، حتى تلك التي لم تكن ملكه قط.</p>
           <p>واليوم ينزل ابنه علاء بمحصول الصباح إلى سانت كاترين، ويبيعه تحت لافتة تقطع وعداً واحداً لا غير.</p>
-          <blockquote>
-            <span class="verse">بغاث الطير أكثرها صياحاً<br>ولم تصحْ البزاة ولا الصقور<br>ضعاف الأسد أكثرها زئيراً<br>وأخطرها اللواتي لا تزير</span>
-          </blockquote>
         </div>
       </div>
     </div>
@@ -306,6 +355,25 @@ a[href^="tel:"],.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
         <figcaption><span data-lang="en">Alaa at the stall in Saint Catherine, with the morning's picking.</span><span data-lang="ar" lang="ar">علاء أمام الطاولة في سانت كاترين، ومعه محصول الصباح.</span></figcaption>
       </figure>
     </div>
+  </div>
+</section>
+
+<section class="poem" id="verse" aria-label="Arabic verse">
+  <div class="poem-glow" aria-hidden="true"></div>
+  <svg class="poem-ridge" viewBox="0 0 1200 230" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 150 L130 96 L220 134 L340 68 L440 126 L550 86 L670 142 L800 92 L910 136 L1020 104 L1130 148 L1200 120 L1200 230 L0 230Z" fill="#3A2A20"/>
+    <path d="M0 180 L150 134 L270 172 L390 120 L510 168 L630 130 L770 178 L890 138 L1010 176 L1130 146 L1200 180 L1200 230 L0 230Z" fill="#241A13"/>
+    <path d="M0 210 L170 186 L330 208 L490 182 L650 210 L830 186 L990 210 L1150 192 L1200 206 L1200 230 L0 230Z" fill="#120C09"/>
+  </svg>
+  <div class="wrap poem-in">
+    <p class="poem-kicker"><span data-lang="en">The sign he farms under</span><span data-lang="ar" lang="ar">الكلمات التي يزرع تحتها</span></p>
+    <blockquote class="poem-verse">
+      <span class="poem-line" style="--i:0">بغاث الطير أكثرها صياحاً</span>
+      <span class="poem-line" style="--i:1">ولم تصحْ البزاة ولا الصقور</span>
+      <span class="poem-line rest" style="--i:2">ضعاف الأسد أكثرها زئيراً</span>
+      <span class="poem-line" style="--i:3">وأخطرها اللواتي لا تزير</span>
+    </blockquote>
+    <p class="poem-gloss" data-lang="en" style="--i:4">The lesser birds cry loudest, while the goshawks and the falcons stay silent. The weakest lions roar the most, and the deadliest are the ones that never roar.</p>
   </div>
 </section>
 
@@ -418,6 +486,41 @@ a[href^="tel:"],.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
   </div>
 </section>
 
+<section id="blessing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-lang="en">Get the Godfather's blessing</h2>
+      <h2 data-lang="ar" lang="ar">احصل على بركة الجودفاذر</h2>
+      <p data-lang="en">For the camps, kitchens and guesthouses we supply. Put your name in, take the seal, hang it by the door.</p>
+      <p data-lang="ar" lang="ar">للمخيمات والمطاعم وبيوت الضيافة التي نورّدها. اكتب اسمك، خذ الختم، وعلّقه عند الباب.</p>
+    </div>
+    <div class="cert">
+      <div>
+        <label class="cert-field">
+          <span data-lang="en">Name of the kitchen or camp</span>
+          <span data-lang="ar" lang="ar">اسم المطبخ أو المخيم</span>
+          <input id="certName" type="text" maxlength="40" autocomplete="organization"
+                 placeholder="Fox Camp" spellcheck="false">
+        </label>
+        <div class="cert-buttons">
+          <button class="btn" id="certDraw" type="button" disabled>
+            <span data-lang="en">Draw the seal</span><span data-lang="ar" lang="ar">ارسم الختم</span>
+          </button>
+          <button class="btn ghost" id="certSave" type="button" disabled>
+            <span data-lang="en">Save or share</span><span data-lang="ar" lang="ar">احفظ أو شارك</span>
+          </button>
+        </div>
+        <p class="cert-note" data-lang="en">The image is drawn in your browser. Nothing is uploaded and nothing is stored.</p>
+        <p class="cert-note" data-lang="ar" lang="ar">تُرسم الصورة داخل متصفحك. لا يُرفع شيء ولا يُحفظ شيء.</p>
+      </div>
+      <figure class="cert-stage" id="certStage" hidden>
+        <canvas id="certCanvas" width="1200" height="1200" role="img"
+                aria-label="Certificate bearing the farm seal and the name entered"></canvas>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap foot">
     <div>© <span id="yr">2026</span>
@@ -451,6 +554,142 @@ a[href^="tel:"],.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
       '<small data-lang="en">'+c.nen+'</small><small data-lang="ar" lang="ar">'+c.nar+'</small></div>'+
       '<div class="months" role="img" aria-label="'+c.en+' season">'+cells+'</div></div>';
   }).join('');
+
+  // the verse scene: light the lines once, when the section comes into view
+  var poem = document.getElementById('verse');
+  if (poem) {
+    if (!('IntersectionObserver' in window)) {
+      poem.classList.add('lit');
+    } else {
+      var io = new IntersectionObserver(function(entries, obs){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { e.target.classList.add('lit'); obs.unobserve(e.target); }
+        });
+      }, {threshold:.35, rootMargin:'0px 0px -8% 0px'});
+      io.observe(poem);
+    }
+  }
+
+  // ---- certificate of the Godfather's blessing -------------------------
+  (function(){
+    var input = document.getElementById('certName'),
+        drawBtn = document.getElementById('certDraw'),
+        saveBtn = document.getElementById('certSave'),
+        stage = document.getElementById('certStage'),
+        cv = document.getElementById('certCanvas');
+    if (!input || !cv || !cv.getContext) return;
+    var ctx = cv.getContext('2d'), file = null, S = 1200;
+
+    input.addEventListener('input', function(){
+      drawBtn.disabled = input.value.trim().length === 0;
+      saveBtn.disabled = true; file = null;
+    });
+
+    function line(text, font, colour, y, rtl, max){
+      ctx.font = font; ctx.fillStyle = colour;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+      try { ctx.direction = rtl ? 'rtl' : 'ltr'; } catch(e){}
+      ctx.fillText(text, S/2, y, max || 900);
+    }
+
+    function paint(name, ar){
+      var seal = document.querySelector('.seal img');
+      ctx.fillStyle = '#F5F0E8'; ctx.fillRect(0,0,S,S);
+      // frame
+      ctx.strokeStyle = '#A6502C'; ctx.lineWidth = 10;
+      ctx.strokeRect(38,38,S-76,S-76);
+      ctx.strokeStyle = 'rgba(36,31,28,.22)'; ctx.lineWidth = 2;
+      ctx.strokeRect(62,62,S-124,S-124);
+
+      if (seal && seal.complete && seal.naturalWidth) {
+        var w = 330, hgt = w * (seal.naturalHeight / seal.naturalWidth);
+        ctx.drawImage(seal, (S-w)/2, 118, w, hgt);
+      }
+
+      line(ar ? 'مزرعة الجودفاذر العضوية' : 'THE GODFATHER ORGANIC FARM',
+           ar ? '500 30px "Noto Kufi Arabic", sans-serif' : '600 26px "Bricolage Grotesque", sans-serif',
+           '#A6502C', 540, ar, 760);
+
+      line(ar ? 'هذا المطبخ يُورَّد من' : 'This kitchen is supplied by',
+           ar ? '500 36px "Noto Kufi Arabic", sans-serif' : '400 40px "Bricolage Grotesque", sans-serif',
+           '#5D544C', 640, ar, 860);
+
+      line(name,
+           ar ? '700 70px "Noto Kufi Arabic", sans-serif' : '800 76px "Bricolage Grotesque", sans-serif',
+           '#241F1C', 760, ar, 880);
+
+      line(ar ? 'جودفاذر وادي سعال' : 'the Godfather of Wadi Sa\'al',
+           ar ? '700 44px "Noto Kufi Arabic", sans-serif' : '600 48px "Bricolage Grotesque", sans-serif',
+           '#3F6B37', 860, ar, 880);
+
+      ctx.strokeStyle = 'rgba(36,31,28,.18)'; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(360, 930); ctx.lineTo(840, 930); ctx.stroke();
+
+      var when = new Date().toLocaleDateString(ar ? 'ar-EG' : 'en-GB',
+                   {day:'numeric', month:'long', year:'numeric'});
+      line(ar ? 'خضار عضوي · صفر كيماويات' : 'Organic vegetables · 0% chemicals',
+           ar ? '400 28px "IBM Plex Sans Arabic", sans-serif' : '400 28px "Bricolage Grotesque", sans-serif',
+           '#5D544C', 990, ar, 820);
+      line(when,
+           ar ? '400 26px "IBM Plex Sans Arabic", sans-serif' : '400 26px "Bricolage Grotesque", sans-serif',
+           '#5D544C', 1036, ar, 820);
+      line('28.7886° N, 34.2516° E',
+           '400 24px "Bricolage Grotesque", sans-serif', '#8A8078', 1082, false, 820);
+    }
+
+    function ready(){
+      // canvas will silently fall back to a system font unless the webfont is
+      // actually loaded at the size being drawn
+      if (!document.fonts) return Promise.resolve();
+      return Promise.all([
+        document.fonts.load('800 76px "Bricolage Grotesque"'),
+        document.fonts.load('600 48px "Bricolage Grotesque"'),
+        document.fonts.load('400 40px "Bricolage Grotesque"'),
+        document.fonts.load('700 70px "Noto Kufi Arabic"'),
+        document.fonts.load('500 36px "Noto Kufi Arabic"'),
+        document.fonts.load('400 28px "IBM Plex Sans Arabic"')
+      ]).catch(function(){});
+    }
+
+    drawBtn.addEventListener('click', function(){
+      var name = input.value.trim();
+      if (!name) return;
+      var ar = document.documentElement.lang === 'ar';
+      drawBtn.disabled = true;
+      var seal = document.querySelector('.seal img');
+      var sealReady = (seal && seal.decode) ? seal.decode().catch(function(){}) : Promise.resolve();
+      Promise.all([ready(), sealReady]).then(function(){
+        paint(name, ar);
+        stage.hidden = false;
+        drawBtn.disabled = false;
+        // build the file now, not on the share click: Safari drops the user
+        // gesture if share() is called after an async toBlob
+        cv.toBlob(function(blob){
+          if (!blob) return;
+          try {
+            file = new File([blob], 'godfather-blessing.png', {type:'image/png'});
+          } catch(e) {
+            file = blob;
+          }
+          saveBtn.disabled = false;
+        }, 'image/png');
+      });
+    });
+
+    saveBtn.addEventListener('click', function(){
+      if (!file) return;
+      var name = (input.value.trim() || 'blessing').replace(/[^\w\u0600-\u06FF -]/g,'') + '.png';
+      if (window.File && file instanceof File && navigator.canShare &&
+          navigator.canShare({files:[file]})) {
+        navigator.share({files:[file]}).catch(function(){});
+        return;
+      }
+      var url = URL.createObjectURL(file), a = document.createElement('a');
+      a.href = url; a.download = name; document.body.appendChild(a); a.click();
+      document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+    });
+  })();
 
   var root = document.documentElement, btn = document.getElementById('langBtn');
   function setLang(l){
