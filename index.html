@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Godfather Organic Farm — organic vegetables grown with zero chemicals in Wadi Sa'al, Saint Catherine, South Sinai. Tomatoes, peppers, chilli, aubergine and herbs, picked and sold the same day.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/logo-1600.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Godfather Organic Farm — Wadi Sa'al, Saint Catherine">
+<meta property="og:description" content="Organic vegetables, zero chemicals, grown in Wadi Sa'al and picked the same day. مزرعة الجودفاذر العضوية.">
+<meta property="og:image" content="https://USERNAME.github.io/godfather-farm/assets/godfather-wellhead.jpg">
+<meta property="og:url" content="https://USERNAME.github.io/godfather-farm/">
+<meta name="twitter:card" content="summary_large_image">
+<title>The Godfather Organic Farm — Wadi Sa'al, Saint Catherine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#241F1C; --ink-soft:#5D544C; --paper:#F5F0E8; --limestone:#EAE2D5;
+  --limestone-deep:#DED4C4; --clay:#A6502C; --clay-bright:#C4633A;
+  --leaf:#3F6B37; --leaf-bright:#57894C; --line:rgba(36,31,28,.16);
+  --sky-a:#F0DFC6; --sky-b:#DCC0A0;
+  --ridge-far:#A98165; --ridge-mid:#7E5B45; --ridge-near:#4E382C;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#EFE8DC; --ink-soft:#AFA396; --paper:#16120F; --limestone:#1E1915;
+    --limestone-deep:#2A231D; --clay:#D07A4C; --clay-bright:#E08F5F;
+    --leaf:#7FAE6F; --leaf-bright:#95C384; --line:rgba(239,232,220,.18);
+    --sky-a:#241A16; --sky-b:#33241C;
+    --ridge-far:#4A362B; --ridge-mid:#33251D; --ridge-near:#201712;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#EFE8DC; --ink-soft:#AFA396; --paper:#16120F; --limestone:#1E1915;
+  --limestone-deep:#2A231D; --clay:#D07A4C; --clay-bright:#E08F5F;
+  --leaf:#7FAE6F; --leaf-bright:#95C384; --line:rgba(239,232,220,.18);
+  --sky-a:#241A16; --sky-b:#33241C;
+  --ridge-far:#4A362B; --ridge-mid:#33251D; --ridge-near:#201712;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,sans-serif;
+  font-weight:300;font-size:clamp(16px,1.05vw + 13px,18px);line-height:1.65}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;line-height:1.04;margin:0;letter-spacing:-.02em}
+p{margin:0 0 1em}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:min(1060px,92vw);margin-inline:auto}
+.ar{direction:rtl;unicode-bidi:isolate;font-weight:400}
+
+.draft{background:var(--clay);color:#fff;font-size:.8rem;padding:.55rem 0;text-align:center}
+
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:1.2rem;padding:.7rem 0}
+.mark{display:flex;align-items:center;gap:.65rem;text-decoration:none;margin-inline-end:auto}
+.mark svg{flex:none}
+.mark-name{display:flex;flex-direction:column;line-height:1.15}
+.mark-name b{font-family:"Bricolage Grotesque",serif;font-weight:600;font-size:.96rem}
+.mark-name small{font-size:.72rem;color:var(--ink-soft)}
+nav{display:flex;gap:1.3rem;font-size:.9rem}
+nav a{text-decoration:none;color:var(--ink-soft);padding-bottom:2px;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus-visible{color:var(--ink);border-bottom-color:var(--clay)}
+@media(max-width:820px){nav{display:none}}
+
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sky-a),var(--sky-b))}
+.hero-in{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.5rem,4vw,3rem);
+  align-items:center;padding:clamp(2rem,6vw,4rem) 0 1.5rem;position:relative}
+@media(max-width:820px){.hero-in{grid-template-columns:1fr;text-align:left}}
+.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem}
+.hero h1{font-size:clamp(2.2rem,6.5vw,4.2rem);max-width:15ch}
+.hero .arname{font-size:clamp(1.15rem,3.4vw,1.7rem);color:var(--ink-soft);margin-top:.5rem}
+.lede{max-width:46ch;margin-top:1.2rem}
+.where{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;font-size:.86rem;color:var(--ink-soft)}
+.where i{width:7px;height:7px;border-radius:50%;background:var(--leaf);display:inline-block}
+.seal{width:min(100%,330px);justify-self:center}
+.seal svg{width:100%;height:auto;filter:drop-shadow(0 8px 24px rgba(36,31,28,.18))}
+.hero-art{display:block;width:100%;height:auto}
+
+.sign{background:var(--ink);color:var(--paper);padding:1.4rem 0}
+.sign-in{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;align-items:baseline;font-size:.92rem}
+.sign b{font-weight:600;color:var(--clay-bright)}
+.sign a{color:var(--paper)}
+
+section{padding:clamp(2.8rem,7vw,5rem) 0}
+.sec-head{max-width:54ch;margin-bottom:2.2rem}
+.sec-head h2{font-size:clamp(1.7rem,4vw,2.6rem)}
+.sec-head p{margin-top:.9rem;color:var(--ink-soft)}
+.alt{background:var(--limestone)}
+
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+@media(max-width:800px){.story{grid-template-columns:1fr}}
+figure{margin:0}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.2rem}
+.pair img{width:100%;height:clamp(220px,26vw,320px);object-fit:cover;border-radius:3px}
+@media(max-width:620px){.pair{grid-template-columns:1fr}}
+figure img{border-radius:3px}
+figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:.6rem}
+.story blockquote{margin:1.6rem 0 0;padding:1.3rem 1.5rem;background:var(--limestone-deep);
+  border-left:3px solid var(--clay);font-size:1rem;line-height:1.55}
+.story blockquote small{display:block;margin-top:.7rem;font-size:.81rem;color:var(--ink-soft)}
+
+.cal{border-top:1px solid var(--line);margin-bottom:2.6rem}
+.cal-key,.cal-row{display:grid;grid-template-columns:minmax(9rem,1.1fr) 3fr;gap:1rem;align-items:center}
+.cal-key{font-size:.7rem;color:var(--ink-soft);padding-bottom:.4rem}
+.cal-key .mrow{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;text-align:center}
+.cal-row{padding:.65rem 0;border-bottom:1px solid var(--line)}
+.crop b{font-weight:600;font-size:.95rem;display:block}
+.crop small{color:var(--ink-soft);font-size:.78rem}
+.months{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;height:20px}
+.m{background:color-mix(in srgb,var(--ink) 9%,transparent);border-radius:2px}
+.m.on{background:var(--leaf)}
+.m.now{outline:2px solid var(--clay);outline-offset:1px}
+@media(max-width:620px){
+  .cal-row,.cal-key{grid-template-columns:1fr;gap:.3rem}
+  .cal-key .clabel{display:none}
+}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:3px}
+@media(max-width:520px){.gallery img{height:190px}}
+
+.band{margin:0;background:var(--ink)}
+.band img{width:100%;height:clamp(230px,38vw,430px);object-fit:cover}
+.band figcaption{color:var(--paper);opacity:.72;font-size:.8rem;padding:.7rem 4vw}
+
+.steps{counter-reset:s}
+.step{counter-increment:s;display:grid;grid-template-columns:auto 1fr;gap:1.3rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step::before{content:counter(s,decimal-leading-zero);font-family:"Bricolage Grotesque",serif;
+  font-weight:600;font-size:.9rem;color:var(--clay);padding-top:.25rem}
+.step h3{font-size:1.08rem;font-weight:600;margin-bottom:.35rem}
+.step p{color:var(--ink-soft);margin:0;max-width:60ch}
+
+.buy{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+@media(max-width:780px){.buy{grid-template-columns:1fr}}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.facts li{display:flex;justify-content:space-between;gap:1.4rem;padding:.72rem 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.facts span:first-child{color:var(--ink-soft)}
+.facts span:last-child{text-align:right;font-weight:500}
+.cta{display:inline-block;margin-top:1.4rem;background:var(--leaf);color:#fff;text-decoration:none;
+  padding:.8rem 1.5rem;border-radius:2px;font-weight:500;font-size:.93rem}
+.cta:hover,.cta:focus-visible{background:var(--leaf-bright)}
+.card{background:var(--limestone-deep);padding:1.4rem;border-radius:3px;margin-top:1rem}
+.card h3{font-size:1rem;font-weight:600;margin-bottom:.5rem}
+.card p{color:var(--ink-soft);font-size:.9rem}
+.card p:last-child{margin:0}
+
+footer{background:var(--ink);color:color-mix(in srgb,var(--paper) 80%,transparent);padding:2.4rem 0;font-size:.86rem}
+.foot{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+footer b{color:var(--paper);font-weight:600}
+footer a{color:var(--clay-bright)}
+
+
+/* ---- bilingual ---- */
+html[lang="en"] [data-lang="ar"]{display:none}
+html[lang="ar"] [data-lang="en"]{display:none}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{
+  font-family:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif;font-weight:700;
+  line-height:1.25;letter-spacing:0}
+html[lang="ar"] .mark-name b{font-family:"Noto Kufi Arabic",sans-serif;font-weight:500;font-size:.9rem}
+html[lang="ar"] .kicker{letter-spacing:.04em}
+html[dir="rtl"] .story blockquote{border-left:0;border-right:3px solid var(--clay)}
+html[dir="rtl"] .facts span:last-child{text-align:left}
+html[dir="rtl"] .step::before{padding-top:.3rem}
+.months,.cal-key .mrow{direction:ltr}
+.langtoggle{flex:none;background:none;border:1px solid var(--line);color:var(--ink-soft);
+  font:inherit;font-size:.8rem;padding:.35rem .8rem;border-radius:999px;cursor:pointer;
+  font-family:"IBM Plex Sans Arabic",sans-serif}
+.langtoggle:hover,.langtoggle:focus-visible{color:var(--ink);border-color:var(--clay)}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+@media (prefers-reduced-motion: no-preference){
+  .kicker,.hero h1,.hero .arname,.lede,.where,.seal{animation:rise .75s cubic-bezier(.2,.7,.3,1) backwards}
+  .hero h1{animation-delay:.06s}.hero .arname{animation-delay:.12s}
+  .lede{animation-delay:.18s}.where{animation-delay:.24s}.seal{animation-delay:.1s}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<div class="draft">
+  <span data-lang="en">Draft site — farm details and photos are real; the family history is placeholder text awaiting Mr. Rezk's own account.</span>
+  <span data-lang="ar" lang="ar">نسخة أولية — بيانات المزرعة والصور حقيقية، أما تاريخ العائلة فنص مؤقت في انتظار رواية الأستاذ رزق.</span>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top">
+      <svg width="40" height="40" viewBox="0 0 600 600" aria-hidden="true">
+        <circle cx="300" cy="300" r="288" fill="none" stroke="currentColor" stroke-width="20"/>
+        <circle cx="204" cy="212" r="26" fill="var(--clay)"/>
+        <path d="M 168 342 L 214 262 L 240 296 L 268 232 L 300 288 L 338 214 L 372 274 L 396 248 L 418 292 L 434 272 L 452 342 Z" fill="currentColor"/>
+        <path d="M 168 342 H 452" stroke="currentColor" stroke-width="14" stroke-linecap="round"/>
+        <path d="M 300 430 V 366" stroke="var(--leaf)" stroke-width="18" stroke-linecap="round"/>
+        <path d="M 300 382 C 262 376 238 396 234 424 C 272 430 296 412 300 382 Z" fill="var(--leaf)"/>
+        <path d="M 300 398 C 338 392 362 412 366 440 C 328 446 304 428 300 398 Z" fill="var(--leaf)"/>
+      </svg>
+      <span class="mark-name">
+        <b data-lang="en">The Godfather Organic Farm</b>
+        <b data-lang="ar" lang="ar">مزرعة الجودفاذر العضوية</b>
+        <small data-lang="en">وادي سعال · سانت كاترين</small>
+        <small data-lang="ar" lang="ar">Wadi Sa'al · Saint Catherine</small>
+      </span>
+    </a>
+    <nav>
+      <a href="#story"><span data-lang="en">The Godfather</span><span data-lang="ar" lang="ar">الجودفاذر</span></a>
+      <a href="#grow"><span data-lang="en">What we grow</span><span data-lang="ar" lang="ar">ماذا نزرع</span></a>
+      <a href="#how"><span data-lang="en">How</span><span data-lang="ar" lang="ar">كيف نزرع</span></a>
+      <a href="#buy"><span data-lang="en">Buy</span><span data-lang="ar" lang="ar">الشراء</span></a>
+    </nav>
+    <button class="langtoggle" id="langBtn" type="button" aria-label="Switch language">عربي</button>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <div class="kicker">
+        <span data-lang="en">Wadi Sa'al · Saint Catherine · South Sinai</span>
+        <span data-lang="ar" lang="ar">وادي سعال · سانت كاترين · جنوب سيناء</span>
+      </div>
+      <h1 data-lang="en">The man who made this wadi grow.</h1>
+      <h1 data-lang="ar" lang="ar">الرجل الذي أنبت هذا الوادي.</h1>
+      <div class="arname ar" data-lang="en">مزرعة الجودفاذر العضوية — وادي سعال</div>
+      <div class="arname" data-lang="ar" style="direction:ltr">The Godfather Organic Farm — Wadi Sa'al</div>
+      <p class="lede" data-lang="en">Mr. Rezk was among the first to farm Wadi Sa'al. What began as one man's patch of worked ground is now a producing organic farm — and much of what his neighbours know about growing here, they learned alongside him.</p>
+      <p class="lede" data-lang="ar" lang="ar">كان الأستاذ رزق من أوائل من زرعوا وادي سعال. ما بدأ كقطعة أرض عمل فيها رجل واحد صار اليوم مزرعة عضوية منتجة، وكثير مما يعرفه جيرانه عن الزراعة هنا تعلّموه إلى جواره.</p>
+      <div class="where"><i></i>
+        <span data-lang="en">28.7886° N, 34.2516° E · open 24 hours</span>
+        <span data-lang="ar" lang="ar">28.7886° شمالاً، 34.2516° شرقاً · مفتوحة 24 ساعة</span>
+      </div>
+    </div>
+    <div class="seal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"  role="img" aria-label="The Godfather Organic Farm, Wadi Sa'al, Saint Catherine, Sinai" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTowZWZmMDRhZi1hMTA5LTQ4NmYtOTM1YS05ZTgzZDg2NmJjYWQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaJXrr3fTSJZe5AYDr1tlcg0AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1MjEwOTZiOC02YjRjLTRkZTAtODU3OC1kODVlNDY5MzQxZGNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo8INma6nIYM53WYR+kKdUjAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggQQjqcuuvR1zSc6cy4QclQs3wGAb5qaTathWlQWsgnhekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEigwK+MfcLY4L28HabcfKcAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCATYNkuhw1maW7b/ph+4LM9SGIItDH2gMOaDLcrwJIxXWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjtZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjBlZmYwNGFmLWExMDktNDg2Zi05MzVhLTllODNkODY2YmNhZC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmI3ZDExYWVjLThkN2QtNGVkZC1hMGQyLWFkMmIwYjM0YWJlNXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBBCOpy669HXNJzpzLhByVCzfAYBvmppNq2FaVBayCeF6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggdtUxCeO8wHe8A3hKQ7BjnmDX/fnmzn00tbNnsw/iS+miY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgguK75Agek5LGs4ARa++EM6lDxVGNO/uhewxgXBEhrISV0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQCfLUZw1pa/UtvSZJCrh5GlShDx4Y7O3mwqWYtA4XAvypISgWtlpCqPYp4sU14yl40qwGanNK8j1rKNelbTzFq0=</c2pa:manifest></metadata>
+  <defs>
+    <path id="arcTop" d="M 58,300 A 242,242 0 0 1 542,300"/>
+    <path id="arcBottom" d="M 44,300 A 256,256 0 0 0 556,300"/>
+  </defs>
+
+  <circle cx="300" cy="300" r="291" fill="#F5F0E8"/>
+  <circle cx="300" cy="300" r="291" fill="none" stroke="#241F1C" stroke-width="7"/>
+  <circle cx="300" cy="300" r="277" fill="none" stroke="#241F1C" stroke-width="2"/>
+  <circle cx="300" cy="300" r="206" fill="none" stroke="#241F1C" stroke-width="2"/>
+
+  <circle cx="204" cy="212" r="23" fill="#A6502C"/>
+
+  <!-- Sinai granite ridge -->
+  <path d="M 168 342
+           L 214 262 L 240 296 L 268 232 L 300 288
+           L 338 214 L 372 274 L 396 248 L 418 292 L 434 272 L 452 342 Z"
+        fill="#241F1C"/>
+  <path d="M 168 342 H 452" stroke="#241F1C" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- seedling -->
+  <path d="M 300 416 V 356" stroke="#3F6B37" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 300 372 C 264 366 242 384 238 412 C 274 418 296 402 300 372 Z" fill="#3F6B37"/>
+  <path d="M 300 388 C 336 382 358 400 362 428 C 326 434 304 418 300 388 Z" fill="#3F6B37"/>
+
+  <!-- drip line -->
+  <path d="M 192 440 H 408" stroke="#241F1C" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 20"/>
+  <path d="M 192 440 H 408" stroke="#241F1C" stroke-width="1.5"/>
+
+  <text x="300" y="478" text-anchor="middle" direction="rtl"
+        font-family="'IBM Plex Sans Arabic','Noto Sans Arabic',sans-serif"
+        font-size="25" fill="#241F1C">مزرعة الجودفاذر</text>
+
+  <text font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="bold"
+        letter-spacing="1.5" fill="#241F1C">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">THE GODFATHER ORGANIC FARM</textPath>
+  </text>
+
+  <text font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="4" fill="#A6502C">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">WADI SA'AL · SAINT CATHERINE · SINAI</textPath>
+  </text>
+</svg></div>
+  </div>
+  <svg class="hero-art" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 130 L130 80 L220 118 L340 56 L440 110 L550 74 L670 126 L800 80 L910 120 L1020 92 L1130 132 L1200 106 L1200 220 L0 220Z" fill="var(--ridge-far)"/>
+    <path d="M0 164 L150 120 L270 156 L390 108 L510 152 L630 118 L770 162 L890 124 L1010 160 L1130 132 L1200 164 L1200 220 L0 220Z" fill="var(--ridge-mid)"/>
+    <path d="M0 198 L170 174 L330 196 L490 170 L650 198 L830 174 L990 198 L1150 180 L1200 194 L1200 220 L0 220Z" fill="var(--ridge-near)"/>
+  </svg>
+</div>
+
+<div class="sign">
+  <div class="wrap sign-in">
+    <div><b data-lang="en">Organic vegetables · 0% chemicals · picked today from St. Catherine</b><b data-lang="ar" lang="ar">خضار عضوي · صفر كيماويات · يُقطف اليوم من سانت كاترين</b></div>
+    <div><span data-lang="en">Open 24 hours</span><span data-lang="ar" lang="ar">مفتوحة 24 ساعة</span></div>
+    <div><a href="tel:+201005161784">+20 100 516 1784</a></div>
+  </div>
+</div>
+
+<section id="story">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-lang="en">Why they call him the Godfather</h2>
+      <h2 data-lang="ar" lang="ar">لماذا يسمّونه الجودفاذر</h2>
+      <p data-lang="en">Wadi Sa'al is now a recognised farming settlement in the Saint Catherine mountains. It did not start that way.</p>
+      <p data-lang="ar" lang="ar">وادي سعال اليوم تجمّع زراعي معروف في جبال سانت كاترين. لم يبدأ هكذا.</p>
+    </div>
+    <div class="story">
+      <figure>
+        <img src="assets/godfather-wellhead.jpg" alt="Mr. Rezk seated in a chair on the open ground of Wadi Sa'al beside the farm wellhead, an Egyptian flag flying behind him and coiled irrigation hose on the sand" width="1000" height="750">
+        <figcaption><span data-lang="en">Mr. Rezk at the wellhead in Wadi Sa'al, irrigation line still coiled behind him.</span><span data-lang="ar" lang="ar">الأستاذ رزق عند رأس البئر في وادي سعال، وخراطيم الري ما زالت ملفوفة خلفه.</span></figcaption>
+      </figure>
+      <div>
+        <div data-lang="en">
+          <p>When Mr. Rezk started here, there was no model to copy. Farming this high in Sinai means short water, hard winters and ground that gives up nothing without years of work put into it first. He did that work, and then he shared what it taught him.</p>
+          <p>That is the part his neighbours remember. Advice given, seedlings passed on, a hand with the irrigation when someone's line failed. The farms around him are part of what he built, even the ones that were never his.</p>
+          <p>Today his son Alaa takes the morning's picking down to Saint Catherine and sells it under a sign that makes exactly one promise.</p>
+          <blockquote>
+            Placeholder. This is where Mr. Rezk's own words belong — when he came to Wadi Sa'al, what the ground looked like then, and what he wanted for the people here.
+            <small>To be replaced with a real quote.</small>
+          </blockquote>
+        </div>
+        <div data-lang="ar" lang="ar">
+          <p>حين بدأ الأستاذ رزق هنا، لم يكن أمامه نموذج يحتذيه. الزراعة على هذا الارتفاع في سيناء تعني ماءً شحيحاً، وشتاءً قاسياً، وأرضاً لا تعطي شيئاً قبل سنوات من العمل فيها. قام بذلك العمل، ثم علّم غيره ما تعلّمه منه.</p>
+          <p>وهذا ما يذكره جيرانه: نصيحة تُعطى، وشتلات تُمرَّر، ويد تمتد حين يتعطل خط الري عند أحدهم. المزارع من حوله جزء مما بناه، حتى تلك التي لم تكن ملكه قط.</p>
+          <p>واليوم ينزل ابنه علاء بمحصول الصباح إلى سانت كاترين، ويبيعه تحت لافتة تقطع وعداً واحداً لا غير.</p>
+          <blockquote>
+            نص مؤقت. هنا مكان كلام الأستاذ رزق بنفسه — متى جاء إلى وادي سعال، وكيف كانت الأرض حينها، وماذا أراد لأهل المكان.
+            <small>سيُستبدل باقتباس حقيقي.</small>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <figure>
+        <img loading="lazy" decoding="async" src="assets/godfather-and-alaa.jpg" alt="Alaa and his father together outdoors in Wadi Sa'al with an Egyptian flag beside them" width="900" height="675">
+        <figcaption><span data-lang="en">The Godfather and his son Alaa, on the land at Wadi Sa'al.</span><span data-lang="ar" lang="ar">الجودفاذر وابنه علاء، على الأرض في وادي سعال.</span></figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" decoding="async" src="assets/stall-saint-catherine.jpg" alt="Alaa Rezk standing behind a table of packed tomatoes and peppers in Saint Catherine, holding a sign reading Organic vegetables, 0% chemicals, picked today from St. Catherine" width="820" height="1091">
+        <figcaption><span data-lang="en">Alaa at the stall in Saint Catherine, with the morning's picking.</span><span data-lang="ar" lang="ar">علاء أمام الطاولة في سانت كاترين، ومعه محصول الصباح.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="grow">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-lang="en">What we grow</h2>
+      <h2 data-lang="ar" lang="ar">ماذا نزرع</h2>
+      <p data-lang="en">Everything below comes out of the tunnels on the wadi floor, on drip line, in sandy red mountain soil. The months shown are a first draft and still need confirming against a real season.</p>
+      <p data-lang="ar" lang="ar">كل ما يلي يخرج من الأنفاق الزراعية في قاع الوادي، على خطوط تنقيط، في تربة جبلية رملية حمراء. الشهور المعروضة مسودة أولى وتحتاج إلى تأكيد من موسم حقيقي.</p>
+    </div>
+    <div class="cal">
+      <div class="cal-key">
+        <div class="clabel"><span data-lang="en">Crop</span><span data-lang="ar" lang="ar">المحصول</span></div>
+        <div class="mrow" data-lang="en"><span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
+        <div class="mrow" data-lang="ar"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+      </div>
+      <div id="calRows"></div>
+    </div>
+    <div class="gallery">
+      <figure><img loading="lazy" decoding="async" src="assets/tomatoes.jpg" alt="Tomato plant with ripe and green fruit on a drip-irrigated bed"><figcaption><span data-lang="en">Tomatoes on the vine</span><span data-lang="ar" lang="ar">طماطم على العنقود</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/red-bell-peppers.jpg" alt="Red bell peppers ripening inside a polytunnel"><figcaption><span data-lang="en">Red bell peppers, left to ripen</span><span data-lang="ar" lang="ar">فلفل رومي أحمر، تُرك لينضج</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/green-bell-pepper.jpg" alt="Green bell pepper on the plant"><figcaption><span data-lang="en">Green bell pepper</span><span data-lang="ar" lang="ar">فلفل رومي أخضر</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/red-chilli.jpg" alt="Red chilli pepper growing beside a black drip line"><figcaption><span data-lang="en">Chilli, cut red</span><span data-lang="ar" lang="ar">فلفل حار، يُقطف أحمر</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/long-green-chilli.jpg" alt="Long pale green chilli on a young plant inside a hoop tunnel"><figcaption><span data-lang="en">Long green chilli</span><span data-lang="ar" lang="ar">فلفل أخضر طويل</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<figure class="band">
+  <img loading="lazy" decoding="async" src="assets/aubergine-tunnel.jpg" alt="Aubergine growing on red soil beside a hoop tunnel, with a granite peak behind the farm" width="1400" height="1033">
+  <figcaption><span data-lang="en">Aubergine on the wadi floor — the tunnels and the mountain behind them.</span><span data-lang="ar" lang="ar">باذنجان في قاع الوادي — الأنفاق والجبل خلفها.</span></figcaption>
+</figure>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-lang="en">How it's grown</h2>
+      <h2 data-lang="ar" lang="ar">كيف نزرع</h2>
+      <p data-lang="en">Nothing here is complicated. It's just done properly, every day, in a place that makes it hard.</p>
+      <p data-lang="ar" lang="ar">لا شيء هنا معقّد. الأمر فقط أنه يُنفَّذ بإتقان، كل يوم، في مكان يجعل ذلك صعباً.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div>
+          <h3 data-lang="en">Under cover, against the mountain</h3>
+          <h3 data-lang="ar" lang="ar">تحت الغطاء، في مواجهة الجبل</h3>
+          <p data-lang="en">Hoop tunnels hold the heat through the cold Saint Catherine nights and break the sun and wind by day. Without them the season here would be a few short months.</p>
+          <p data-lang="ar" lang="ar">الأنفاق البلاستيكية تحفظ الدفء في ليالي سانت كاترين الباردة، وتكسر الشمس والريح في النهار. بدونها لكان الموسم هنا بضعة أشهر قصيرة فقط.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3 data-lang="en">Drip line to every plant</h3>
+          <h3 data-lang="ar" lang="ar">خط تنقيط لكل نبتة</h3>
+          <p data-lang="en">A line runs the length of each bed and water goes to the root, not the surface. In a wadi where rain is rare and sudden, none of it can be wasted.</p>
+          <p data-lang="ar" lang="ar">يمتد خط على طول كل مصطبة، فيصل الماء إلى الجذر لا إلى السطح. في وادٍ يكون فيه المطر نادراً ومفاجئاً، لا يمكن إهدار قطرة.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3 data-lang="en">Zero chemicals</h3>
+          <h3 data-lang="ar" lang="ar">صفر كيماويات</h3>
+          <p data-lang="en">No synthetic pesticide, no chemical fertiliser. The sign on the table in Saint Catherine says 0%, and it means it.</p>
+          <p data-lang="ar" lang="ar">لا مبيدات صناعية ولا أسمدة كيماوية. اللافتة على الطاولة في سانت كاترين تقول صفر بالمئة، وهي تعنيها.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3 data-lang="en">Picked and sold the same day</h3>
+          <h3 data-lang="ar" lang="ar">يُقطف ويُباع في اليوم نفسه</h3>
+          <p data-lang="en">Cut in the morning, packed at the farm, on the table in Saint Catherine by afternoon. Nothing sits in storage and nothing travels far.</p>
+          <p data-lang="ar" lang="ar">يُقطف صباحاً، ويُعبّأ في المزرعة، ويكون على الطاولة في سانت كاترين بعد الظهر. لا شيء يبقى في التخزين، ولا شيء يسافر بعيداً.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="buy">
+  <div class="wrap buy">
+    <div>
+      <div class="sec-head" style="margin-bottom:1.4rem">
+        <h2 data-lang="en">Where to find us</h2>
+        <h2 data-lang="ar" lang="ar">أين تجدنا</h2>
+        <p data-lang="en">Call ahead for a box, or find the stall in Saint Catherine when the day's picking is out on the table.</p>
+        <p data-lang="ar" lang="ar">اتصل مسبقاً لطلب صندوق، أو ابحث عن الطاولة في سانت كاترين حين يكون محصول اليوم معروضاً.</p>
+      </div>
+      <ul class="facts">
+        <li><span><span data-lang="en">Farm</span><span data-lang="ar" lang="ar">المزرعة</span></span><span><span data-lang="en">Wadi Sa'al, Saint Catherine</span><span data-lang="ar" lang="ar">وادي سعال، سانت كاترين</span></span></li>
+        <li><span><span data-lang="en">Governorate</span><span data-lang="ar" lang="ar">المحافظة</span></span><span><span data-lang="en">South Sinai 8731063</span><span data-lang="ar" lang="ar">جنوب سيناء 8731063</span></span></li>
+        <li><span><span data-lang="en">Hours</span><span data-lang="ar" lang="ar">المواعيد</span></span><span><span data-lang="en">Open 24 hours</span><span data-lang="ar" lang="ar">مفتوحة 24 ساعة</span></span></li>
+        <li><span><span data-lang="en">Phone &amp; WhatsApp</span><span data-lang="ar" lang="ar">الهاتف وواتساب</span></span><span><span data-lang="en">+20 100 516 1784</span><span data-lang="ar" lang="ar">+20 100 516 1784</span></span></li>
+        <li><span><span data-lang="en">Coordinates</span><span data-lang="ar" lang="ar">الإحداثيات</span></span><span><span data-lang="en">28.7886° N, 34.2516° E</span><span data-lang="ar" lang="ar">28.7886° شمالاً، 34.2516° شرقاً</span></span></li>
+      </ul>
+      <a class="cta" href="tel:+201005161784"><span data-lang="en">Call the farm</span><span data-lang="ar" lang="ar">اتصل بالمزرعة</span></a>
+      <div class="card">
+        <h3 data-lang="en">Boxes and standing orders</h3>
+        <h3 data-lang="ar" lang="ar">الصناديق والطلبات الدورية</h3>
+        <p data-lang="en">Mixed trays are packed to order — tomatoes, peppers, chilli, aubergine, rosemary, whatever is ready that morning. Camps, kitchens and guesthouses around Saint Catherine can arrange a regular delivery.</p>
+        <p data-lang="ar" lang="ar">تُعبّأ الصواني حسب الطلب — طماطم، وفلفل رومي، وفلفل حار، وباذنجان، وروزماري، وكل ما يكون جاهزاً ذلك الصباح. المخيمات والمطاعم وبيوت الضيافة حول سانت كاترين يمكنها ترتيب توصيل منتظم.</p>
+        <p class="ar" data-lang="en" style="margin-top:.8rem">خضار عضوي طازج من وادي سعال — بدون أي كيماويات.</p>
+        <p data-lang="ar" style="margin-top:.8rem;direction:ltr">Fresh organic vegetables from Wadi Sa'al — no chemicals at all.</p>
+      </div>
+    </div>
+    <figure>
+      <img loading="lazy" decoding="async" src="assets/packed-trays.jpg" alt="Trays of tomatoes, bell peppers and long green chillies packed on a wooden table" width="820" height="1095">
+      <figcaption><span data-lang="en">A morning's picking, packed and ready to go down the mountain.</span><span data-lang="ar" lang="ar">محصول صباح واحد، مُعبّأ وجاهز للنزول من الجبل.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr">2026</span>
+      <span data-lang="en">The Godfather Organic Farm · وادي سعال، سانت كاترين، جنوب سيناء</span>
+      <span data-lang="ar" lang="ar">مزرعة الجودفاذر العضوية · وادي سعال، سانت كاترين، جنوب سيناء</span>
+    </div>
+    <div><span data-lang="en">Site by <b>Alaa Rezk</b></span><span data-lang="ar" lang="ar">الموقع من إعداد <b>علاء رزق</b></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var crops = [
+    {en:"Plum tomatoes", ar:"طماطم", nen:"Main tunnel crop", nar:"المحصول الأساسي في الأنفاق", m:[0,0,1,1,1,1,1,1,1,1,0,0]},
+    {en:"Cherry tomatoes", ar:"طماطم شيري", nen:"Sold on the vine", nar:"تُباع على العنقود", m:[0,0,1,1,1,1,1,1,1,1,0,0]},
+    {en:"Green bell peppers", ar:"فلفل رومي أخضر", nen:"Picked young", nar:"يُقطف مبكراً", m:[0,0,0,1,1,1,1,1,1,1,0,0]},
+    {en:"Red bell peppers", ar:"فلفل رومي أحمر", nen:"Left to ripen on the plant", nar:"يُترك لينضج على النبات", m:[0,0,0,0,0,1,1,1,1,1,0,0]},
+    {en:"Long green chillies", ar:"فلفل أخضر طويل", nen:"Mild, for cooking", nar:"خفيف، للطبخ", m:[0,0,0,1,1,1,1,1,1,1,0,0]},
+    {en:"Red chillies", ar:"فلفل أحمر حار", nen:"Same plant, later cut", nar:"نفس النبات، قطف متأخر", m:[0,0,0,0,0,1,1,1,1,1,0,0]},
+    {en:"Aubergine", ar:"باذنجان", nen:"Small dark variety", nar:"صنف صغير داكن", m:[0,0,0,0,1,1,1,1,1,1,0,0]},
+    {en:"Rosemary", ar:"روزماري", nen:"Cut fresh, sold in bunches", nar:"يُقطف طازجاً ويُباع بالحزمة", m:[1,1,1,1,1,1,1,1,1,1,1,1]}
+  ];
+  var now = new Date().getMonth();
+  document.getElementById('calRows').innerHTML = crops.map(function(c){
+    var cells = c.m.map(function(v,i){
+      return '<div class="m'+(v?' on':'')+(i===now?' now':'')+'"></div>';
+    }).join('');
+    return '<div class="cal-row"><div class="crop">'+
+      '<b data-lang="en">'+c.en+'</b><b data-lang="ar" lang="ar">'+c.ar+'</b>'+
+      '<small data-lang="en">'+c.nen+'</small><small data-lang="ar" lang="ar">'+c.nar+'</small></div>'+
+      '<div class="months" role="img" aria-label="'+c.en+' season">'+cells+'</div></div>';
+  }).join('');
+
+  var root = document.documentElement, btn = document.getElementById('langBtn');
+  function setLang(l){
+    root.lang = l;
+    root.dir = (l === 'ar') ? 'rtl' : 'ltr';
+    btn.textContent = (l === 'ar') ? 'English' : 'عربي';
+    try { localStorage.setItem('gf-lang', l); } catch(e){}
+  }
+  var start = 'en';
+  try {
+    var saved = localStorage.getItem('gf-lang');
+    if (saved === 'ar' || saved === 'en') start = saved;
+    else if ((navigator.language || '').toLowerCase().indexOf('ar') === 0) start = 'ar';
+  } catch(e){}
+  setLang(start);
+  btn.addEventListener('click', function(){ setLang(root.lang === 'ar' ? 'en' : 'ar'); });
+})();
+</script>
+</body>
+</html>
