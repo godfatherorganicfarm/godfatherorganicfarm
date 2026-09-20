@@ -1,0 +1,264 @@
+{
+  "_comment": "All of the site's copy and business details. Every { \"en\": ..., \"ar\": ... } pair is rendered as both languages; the page shows one and hides the other. Edit here, then run: node build.mjs",
+
+  "site": {
+    "url": "https://godfatherorganicfarm.github.io/",
+    "defaultLang": "en",
+    "ogImage": "og-seal.jpg"
+  },
+
+  "business": {
+    "name": { "en": "The Godfather Organic Farm", "ar": "مزرعة الجودفاذر العضوية" },
+    "place": { "en": "وادي سعال · سانت كاترين", "ar": "Wadi Sa'al · Saint Catherine" },
+    "phone": "+201005161784",
+    "phoneDisplay": "+20 100 516 1784",
+    "whatsapp": {
+      "number": "201005161784",
+      "prefill": "السلام عليكم، أريد طلب صندوق خضار من مزرعة الجودفاذر"
+    },
+    "coords": { "lat": 28.7886, "lon": 34.2516 },
+    "founder": "Mr. Rezk",
+    "address": {
+      "street": "Wadi Sa'al",
+      "locality": "Saint Catherine",
+      "region": "South Sinai",
+      "postalCode": "8731063",
+      "country": "EG"
+    }
+  },
+
+  "meta": {
+    "title": "The Godfather Organic Farm — Wadi Sa'al, Saint Catherine",
+    "description": "The Godfather Organic Farm — organic vegetables grown with zero chemicals in Wadi Sa'al, Saint Catherine, South Sinai.",
+    "ogDescription": "Organic vegetables, zero chemicals, grown in Wadi Sa'al and picked the same day. مزرعة الجودفاذر العضوية.",
+    "twitterDescription": "Organic vegetables, zero chemicals, grown in Wadi Sa'al and picked the same day.",
+    "ogImageAlt": "The Godfather Organic Farm seal — a falcon with spread wings over olive branches",
+    "schemaDescription": "Organic vegetables grown with zero chemicals under polytunnels on drip irrigation in Wadi Sa'al, Saint Catherine, South Sinai."
+  },
+
+  "nav": [
+    { "href": "#story",    "label": { "en": "The Godfather",   "ar": "الجودفاذر" },      "mobileLabel": { "en": "The Godfather",    "ar": "الجودفاذر" } },
+    { "href": "#verse",    "label": { "en": "The verse",       "ar": "الأبيات" },        "desktop": false },
+    { "href": "#grow",     "label": { "en": "What we grow",    "ar": "ماذا نزرع" } },
+    { "href": "#gallery",  "label": { "en": "Gallery",         "ar": "الصور" } },
+    { "href": "#how",      "label": { "en": "How",             "ar": "كيف نزرع" },       "mobileLabel": { "en": "How it's grown",   "ar": "كيف نزرع" } },
+    { "href": "#buy",      "label": { "en": "Buy",             "ar": "الشراء" },         "mobileLabel": { "en": "Where to find us", "ar": "أين تجدنا" } },
+    { "href": "#blessing", "label": { "en": "The blessing",    "ar": "بركة الجودفاذر" }, "desktop": false }
+  ],
+
+  "hero": {
+    "kicker": {
+      "en": "Wadi Sa'al · Saint Catherine · South Sinai",
+      "ar": "وادي سعال · سانت كاترين · جنوب سيناء"
+    },
+    "headline": {
+      "en": "The man who made this wadi grow.",
+      "ar": "الرجل الذي أنبت هذا الوادي."
+    },
+    "crossName": {
+      "en": "مزرعة الجودفاذر العضوية — وادي سعال",
+      "ar": "The Godfather Organic Farm — Wadi Sa'al"
+    },
+    "lede": {
+      "en": "Mr. Rezk was among the first to farm Wadi Sa'al. What began as one man's patch of worked ground is now a producing organic farm — and much of what his neighbours know about growing here, they learned alongside him.",
+      "ar": "كان الأستاذ رزق من أوائل من زرعوا وادي سعال. ما بدأ كقطعة أرض عمل فيها رجل واحد صار اليوم مزرعة عضوية منتجة، وكثير مما يعرفه جيرانه عن الزراعة هنا تعلّموه إلى جواره."
+    },
+    "where": {
+      "en": "28.7886° N, 34.2516° E · open 24 hours",
+      "ar": "28.7886° شمالاً، 34.2516° شرقاً · مفتوحة 24 ساعة"
+    },
+    "seasonLabel": { "en": "In season now", "ar": "في الموسم الآن" }
+  },
+
+  "sign": {
+    "promise": {
+      "en": "Organic vegetables · 0% chemicals · picked today from St. Catherine",
+      "ar": "خضار عضوي · صفر كيماويات · يُقطف اليوم من سانت كاترين"
+    },
+    "hours": { "en": "Open 24 hours", "ar": "مفتوحة 24 ساعة" }
+  },
+
+  "story": {
+    "heading": { "en": "Why they call him the Godfather", "ar": "لماذا يسمّونه الجودفاذر" },
+    "intro": {
+      "en": "Wadi Sa'al is now a recognised farming settlement in the Saint Catherine mountains. It did not start that way.",
+      "ar": "وادي سعال اليوم تجمّع زراعي معروف في جبال سانت كاترين. لم يبدأ هكذا."
+    },
+    "body": {
+      "en": [
+        "When Mr. Rezk started here, there was no model to copy. Farming this high in Sinai means short water, hard winters and ground that gives up nothing without years of work put into it first. He did that work, and then he shared what it taught him.",
+        "That is the part his neighbours remember. Advice given, seedlings passed on, a hand with the irrigation when someone's line failed. The farms around him are part of what he built, even the ones that were never his.",
+        "Today his son Alaa takes the morning's picking down to Saint Catherine and sells it under a sign that makes exactly one promise."
+      ],
+      "ar": [
+        "حين بدأ الأستاذ رزق هنا، لم يكن أمامه نموذج يحتذيه. الزراعة على هذا الارتفاع في سيناء تعني ماءً شحيحاً، وشتاءً قاسياً، وأرضاً لا تعطي شيئاً قبل سنوات من العمل فيها. قام بذلك العمل، ثم علّم غيره ما تعلّمه منه.",
+        "وهذا ما يذكره جيرانه: نصيحة تُعطى، وشتلات تُمرَّر، ويد تمتد حين يتعطل خط الري عند أحدهم. المزارع من حوله جزء مما بناه، حتى تلك التي لم تكن ملكه قط.",
+        "واليوم ينزل ابنه علاء بمحصول الصباح إلى سانت كاترين، ويبيعه تحت لافتة تقطع وعداً واحداً لا غير."
+      ]
+    }
+  },
+
+  "verse": {
+    "kicker": { "en": "The sign he farms under", "ar": "الكلمات التي يزرع تحتها" },
+    "lines": [
+      "بغاث الطير أكثرها صياحاً",
+      "ولم تصحْ البزاة ولا الصقور",
+      "ضعاف الأسد أكثرها زئيراً",
+      "وأخطرها اللواتي لا تزير"
+    ],
+    "breakBefore": 2,
+    "gloss": {
+      "en": "The lesser birds cry loudest, while the goshawks and the falcons stay silent. The weakest lions roar the most, and the deadliest are the ones that never roar."
+    }
+  },
+
+  "grow": {
+    "heading": { "en": "What we grow", "ar": "ماذا نزرع" },
+    "intro": {
+      "en": "Everything below comes out of the tunnels on the wadi floor, on drip line, in sandy red mountain soil.",
+      "ar": "كل ما يلي يخرج من الأنفاق الزراعية في قاع الوادي، على خطوط تنقيط، في تربة جبلية رملية حمراء."
+    },
+    "cropColumn": { "en": "Crop", "ar": "المحصول" }
+  },
+
+  "gallery": {
+    "heading": { "en": "From the farm", "ar": "من المزرعة" },
+    "intro": {
+      "en": "Every photo on this page, in one place — the land, the tunnels, the picking and the table in Saint Catherine. Tap any picture to open it full size.",
+      "ar": "كل صور هذه الصفحة في مكان واحد — الأرض، والأنفاق، والقطف، والطاولة في سانت كاترين. اضغط أي صورة لفتحها بالحجم الكامل."
+    },
+    "hint": {
+      "en": "Use the arrow keys to move between photos, Esc to close. On a phone, swipe.",
+      "ar": "استخدم مفاتيح الأسهم للتنقل بين الصور، و Esc للإغلاق. على الهاتف، اسحب بإصبعك."
+    }
+  },
+
+  "how": {
+    "heading": { "en": "How it's grown", "ar": "كيف نزرع" },
+    "intro": {
+      "en": "Nothing here is complicated. It's just done properly, every day, in a place that makes it hard.",
+      "ar": "لا شيء هنا معقّد. الأمر فقط أنه يُنفَّذ بإتقان، كل يوم، في مكان يجعل ذلك صعباً."
+    },
+    "steps": [
+      {
+        "title": { "en": "Under cover, against the mountain", "ar": "تحت الغطاء، في مواجهة الجبل" },
+        "body": {
+          "en": "Hoop tunnels hold the heat through the cold Saint Catherine nights and break the sun and wind by day. Without them the season here would be a few short months.",
+          "ar": "الأنفاق البلاستيكية تحفظ الدفء في ليالي سانت كاترين الباردة، وتكسر الشمس والريح في النهار. بدونها لكان الموسم هنا بضعة أشهر قصيرة فقط."
+        }
+      },
+      {
+        "title": { "en": "Drip line to every plant", "ar": "خط تنقيط لكل نبتة" },
+        "body": {
+          "en": "A line runs the length of each bed and water goes to the root, not the surface. In a wadi where rain is rare and sudden, none of it can be wasted.",
+          "ar": "يمتد خط على طول كل مصطبة، فيصل الماء إلى الجذر لا إلى السطح. في وادٍ يكون فيه المطر نادراً ومفاجئاً، لا يمكن إهدار قطرة."
+        }
+      },
+      {
+        "title": { "en": "Zero chemicals", "ar": "صفر كيماويات" },
+        "body": {
+          "en": "No synthetic pesticide, no chemical fertiliser. The sign on the table in Saint Catherine says 0%, and it means it.",
+          "ar": "لا مبيدات صناعية ولا أسمدة كيماوية. اللافتة على الطاولة في سانت كاترين تقول صفر بالمئة، وهي تعنيها."
+        }
+      },
+      {
+        "title": { "en": "Picked and sold the same day", "ar": "يُقطف ويُباع في اليوم نفسه" },
+        "body": {
+          "en": "Cut in the morning, packed at the farm, on the table in Saint Catherine by afternoon. Nothing sits in storage and nothing travels far.",
+          "ar": "يُقطف صباحاً، ويُعبّأ في المزرعة، ويكون على الطاولة في سانت كاترين بعد الظهر. لا شيء يبقى في التخزين، ولا شيء يسافر بعيداً."
+        }
+      }
+    ]
+  },
+
+  "buy": {
+    "heading": { "en": "Where to find us", "ar": "أين تجدنا" },
+    "intro": {
+      "en": "Call ahead for a box, or find the stall in Saint Catherine when the day's picking is out on the table.",
+      "ar": "اتصل مسبقاً لطلب صندوق، أو ابحث عن الطاولة في سانت كاترين حين يكون محصول اليوم معروضاً."
+    },
+    "facts": [
+      { "label": { "en": "Farm", "ar": "المزرعة" },
+        "value": { "en": "Wadi Sa'al, Saint Catherine", "ar": "وادي سعال، سانت كاترين" } },
+      { "label": { "en": "Governorate", "ar": "المحافظة" },
+        "value": { "en": "South Sinai 8731063", "ar": "جنوب سيناء 8731063" } },
+      { "label": { "en": "Hours", "ar": "المواعيد" },
+        "value": { "en": "Open 24 hours", "ar": "مفتوحة 24 ساعة" } },
+      { "label": { "en": "Phone & WhatsApp", "ar": "الهاتف وواتساب" },
+        "value": { "en": "+20 100 516 1784", "ar": "+20 100 516 1784" }, "numeric": true },
+      { "label": { "en": "Coordinates", "ar": "الإحداثيات" },
+        "value": { "en": "28.7886° N, 34.2516° E", "ar": "28.7886° شمالاً، 34.2516° شرقاً" },
+        "link": "maps" }
+    ],
+    "buttons": {
+      "whatsapp": { "en": "WhatsApp us", "ar": "راسلنا واتساب" },
+      "call": { "en": "Call the farm", "ar": "اتصل بالمزرعة" },
+      "directions": { "en": "Get directions", "ar": "الاتجاهات على الخريطة" }
+    },
+    "card": {
+      "heading": { "en": "Boxes and standing orders", "ar": "الصناديق والطلبات الدورية" },
+      "body": {
+        "en": "Mixed trays are packed to order — tomatoes, peppers, chilli, aubergine, rosemary, whatever is ready that morning. Camps, kitchens and guesthouses around Saint Catherine can arrange a regular delivery.",
+        "ar": "تُعبّأ الصواني حسب الطلب — طماطم، وفلفل رومي، وفلفل حار، وباذنجان، وروزماري، وكل ما يكون جاهزاً ذلك الصباح. المخيمات والمطاعم وبيوت الضيافة حول سانت كاترين يمكنها ترتيب توصيل منتظم."
+      },
+      "crossTagline": {
+        "en": "خضار عضوي طازج من وادي سعال — بدون أي كيماويات.",
+        "ar": "Fresh organic vegetables from Wadi Sa'al — no chemicals at all."
+      }
+    }
+  },
+
+  "blessing": {
+    "heading": { "en": "Get the Godfather's blessing", "ar": "احصل على بركة الجودفاذر" },
+    "intro": {
+      "en": "For the camps, kitchens and guesthouses we supply. Put your name in, take the seal, hang it by the door.",
+      "ar": "للمخيمات والمطاعم وبيوت الضيافة التي نورّدها. اكتب اسمك، خذ الختم، وعلّقه عند الباب."
+    },
+    "field": { "en": "Name of the kitchen or camp", "ar": "اسم المطبخ أو المخيم" },
+    "placeholder": "Fox Camp",
+    "share": { "en": "Share the seal", "ar": "شارك الختم" },
+    "download": { "en": "Download the seal", "ar": "نزّل الختم" },
+    "saved": { "en": "Saved to your downloads.", "ar": "حُفظت في ملف التنزيلات." },
+    "nudge": {
+      "en": "Hang it by the door — or send it to us on WhatsApp.",
+      "ar": "علّقه عند الباب — أو أرسله لنا على واتساب."
+    },
+    "note": {
+      "en": "The image is drawn in your browser. Nothing is uploaded and nothing is stored.",
+      "ar": "تُرسم الصورة داخل متصفحك. لا يُرفع شيء ولا يُحفظ شيء."
+    },
+    "certificate": {
+      "farmName": { "en": "THE GODFATHER ORGANIC FARM", "ar": "مزرعة الجودفاذر العضوية" },
+      "suppliedBy": { "en": "This kitchen is supplied by", "ar": "هذا المطبخ يُورَّد من" },
+      "signoff": { "en": "the Godfather of Wadi Sa'al", "ar": "جودفاذر وادي سعال" },
+      "promise": { "en": "Organic vegetables · 0% chemicals", "ar": "خضار عضوي · صفر كيماويات" },
+      "coords": "28.7886° N, 34.2516° E",
+      "filename": "godfather-blessing.png"
+    }
+  },
+
+  "footer": {
+    "line": {
+      "en": "The Godfather Organic Farm · وادي سعال، سانت كاترين، جنوب سيناء",
+      "ar": "مزرعة الجودفاذر العضوية · وادي سعال، سانت كاترين، جنوب سيناء"
+    },
+    "credit": { "en": "Site by", "ar": "الموقع من إعداد" },
+    "creditName": { "en": "Alaa Rezk", "ar": "علاء رزق" }
+  },
+
+  "a11y": {
+    "langSwitch": "Switch language",
+    "menu": "Menu",
+    "viewer": "Photo viewer",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "verseSection": "Arabic verse",
+    "certificate": "Certificate bearing the farm seal and the name entered"
+  },
+
+  "offers": [
+    "Plum tomatoes", "Cherry tomatoes", "Bell peppers",
+    "Chillies", "Aubergine", "Rosemary"
+  ]
+}

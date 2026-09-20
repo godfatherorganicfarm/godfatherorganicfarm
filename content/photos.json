@@ -1,0 +1,121 @@
+{
+  "_comment": "Every photo on the site. Drop the file in assets/photos/ and add an entry here. 'place' decides where it appears: hero-seal | story-lead | story-pair | grow-grid | band | buy. 'tile' is its size in the mosaic gallery: wide | tall | big. 'gallery': false keeps a photo out of the mosaic. 'fullBleed': true lets a band photo span the whole viewport instead of the 1060px column.",
+
+  "photos": [
+    {
+      "file": "seal.webp",
+      "place": "hero-seal",
+      "width": 640,
+      "height": 640,
+      "gallery": false,
+      "alt": "The Godfather Organic Farm seal — a pharaonic Horus falcon in gold and inlaid stone, framed by olive branches"
+    },
+    {
+      "file": "rezk-at-the-wellhead.webp",
+      "place": "story-lead",
+      "width": 900,
+      "height": 675,
+      "tile": "wide",
+      "alt": "Mr. Rezk seated in a chair on the open ground of Wadi Sa'al beside the farm wellhead, an Egyptian flag flying behind him and coiled irrigation hose on the sand",
+      "caption": {
+        "en": "Mr. Rezk at the wellhead in Wadi Sa'al, irrigation line still coiled behind him.",
+        "ar": "الأستاذ رزق عند رأس البئر في وادي سعال، وخراطيم الري ما زالت ملفوفة خلفه."
+      }
+    },
+    {
+      "file": "godfather-and-alaa.webp",
+      "place": "story-pair",
+      "width": 860,
+      "height": 645,
+      "tile": "wide",
+      "alt": "Alaa and his father together outdoors in Wadi Sa'al with an Egyptian flag beside them",
+      "caption": {
+        "en": "The Godfather and his son Alaa, on the land at Wadi Sa'al.",
+        "ar": "الجودفاذر وابنه علاء، على الأرض في وادي سعال."
+      }
+    },
+    {
+      "file": "alaa-at-the-stall.webp",
+      "place": "story-pair",
+      "width": 760,
+      "height": 1011,
+      "tile": "tall",
+      "objectPosition": "50% 18%",
+      "alt": "Alaa Rezk standing behind a table of packed tomatoes and peppers in Saint Catherine, holding a sign reading Organic vegetables, 0% chemicals, picked today from St. Catherine",
+      "caption": {
+        "en": "Alaa at the stall in Saint Catherine, with the morning's picking.",
+        "ar": "علاء أمام الطاولة في سانت كاترين، ومعه محصول الصباح."
+      }
+    },
+    {
+      "file": "tomatoes-on-the-vine.webp",
+      "place": "grow-grid",
+      "width": 680,
+      "height": 898,
+      "tile": "tall",
+      "alt": "Tomato plant with ripe and green fruit on a drip-irrigated bed",
+      "caption": { "en": "Tomatoes on the vine", "ar": "طماطم على العنقود" }
+    },
+    {
+      "file": "red-bell-peppers.webp",
+      "place": "grow-grid",
+      "width": 680,
+      "height": 513,
+      "tile": "wide",
+      "alt": "Red bell peppers ripening inside a polytunnel",
+      "caption": { "en": "Red bell peppers, left to ripen", "ar": "فلفل رومي أحمر، تُرك لينضج" }
+    },
+    {
+      "file": "green-bell-pepper.webp",
+      "place": "grow-grid",
+      "width": 680,
+      "height": 835,
+      "tile": "tall",
+      "alt": "Green bell pepper on the plant",
+      "caption": { "en": "Green bell pepper", "ar": "فلفل رومي أخضر" }
+    },
+    {
+      "file": "chilli-cut-red.webp",
+      "place": "grow-grid",
+      "width": 680,
+      "height": 513,
+      "tile": "wide",
+      "alt": "Red chilli pepper growing beside a black drip line",
+      "caption": { "en": "Chilli, cut red", "ar": "فلفل حار، يُقطف أحمر" }
+    },
+    {
+      "file": "long-green-chilli.webp",
+      "place": "grow-grid",
+      "width": 680,
+      "height": 814,
+      "tile": "tall",
+      "alt": "Long pale green chilli on a young plant inside a hoop tunnel",
+      "caption": { "en": "Long green chilli", "ar": "فلفل أخضر طويل" }
+    },
+    {
+      "file": "aubergine-on-the-wadi-floor.webp",
+      "place": "band",
+      "width": 1200,
+      "height": 885,
+      "tile": "big",
+      "fullBleed": false,
+      "alt": "Aubergine growing on red soil beside a hoop tunnel, with a granite peak behind the farm",
+      "caption": {
+        "en": "Aubergine on the wadi floor — the tunnels and the mountain behind them.",
+        "ar": "باذنجان في قاع الوادي — الأنفاق والجبل خلفها."
+      }
+    },
+    {
+      "file": "a-mornings-picking.webp",
+      "place": "buy",
+      "width": 760,
+      "height": 1015,
+      "tile": "tall",
+      "alt": "Trays of tomatoes, bell peppers and long green chillies packed on a wooden table",
+      "caption": {
+        "en": "A morning's picking, packed and ready to go down the mountain.",
+        "ar": "محصول صباح واحد، مُعبّأ وجاهز للنزول من الجبل."
+      }
+    }
+  ]
+}

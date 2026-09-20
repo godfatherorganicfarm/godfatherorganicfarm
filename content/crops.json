@@ -1,0 +1,37 @@
+{
+  "_comment": "The season calendar. 'months' is twelve 1/0 flags, January to December. A crop with a 1 in the current month also appears as an 'In season now' chip in the hero.",
+
+  "crops": [
+    { "name": { "en": "Plum tomatoes", "ar": "طماطم" },
+      "note": { "en": "Main tunnel crop", "ar": "المحصول الأساسي في الأنفاق" },
+      "months": [0,0,1,1,1,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Cherry tomatoes", "ar": "طماطم شيري" },
+      "note": { "en": "Sold on the vine", "ar": "تُباع على العنقود" },
+      "months": [0,0,1,1,1,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Green bell peppers", "ar": "فلفل رومي أخضر" },
+      "note": { "en": "Picked young", "ar": "يُقطف مبكراً" },
+      "months": [0,0,0,1,1,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Red bell peppers", "ar": "فلفل رومي أحمر" },
+      "note": { "en": "Left to ripen on the plant", "ar": "يُترك لينضج على النبات" },
+      "months": [0,0,0,0,0,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Long green chillies", "ar": "فلفل أخضر طويل" },
+      "note": { "en": "Mild, for cooking", "ar": "خفيف، للطبخ" },
+      "months": [0,0,0,1,1,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Red chillies", "ar": "فلفل أحمر حار" },
+      "note": { "en": "Same plant, later cut", "ar": "نفس النبات، قطف متأخر" },
+      "months": [0,0,0,0,0,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Aubergine", "ar": "باذنجان" },
+      "note": { "en": "Small dark variety", "ar": "صنف صغير داكن" },
+      "months": [0,0,0,0,1,1,1,1,1,1,0,0] },
+
+    { "name": { "en": "Rosemary", "ar": "روزماري" },
+      "note": { "en": "Cut fresh, sold in bunches", "ar": "يُقطف طازجاً ويُباع بالحزمة" },
+      "months": [1,1,1,1,1,1,1,1,1,1,1,1] }
+  ]
+}
